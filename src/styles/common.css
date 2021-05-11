@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #404040;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 300;
+    /* font-family:'GoogleSans-Regular'; */
+    font-family: roboto,Tahoma,sans-serif!important;
+    background: #f6f6f6;
+    box-sizing: border-box;
+}
+/* Font chữ của MISA */
+@font-face {
+    font-family: 'GoogleSans-Regular';
+    src: url('../assets/fonts/GoogleSans-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GoogleSans-Light';
+   src: url('../assets/fonts/GoogleSans-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GoogleSans-Black';
+   src: url('../assets/fonts/GoogleSans-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GoogleSans-Thin';
+  src: url('../assets/fonts/GoogleSans-Thin.otf') format('opentype');
+}
+
+/* Định dạng chung cho thẻ select */
+select:focus{
+    outline: none;
+}
+select:hover{
+    cursor: pointer;
+}
+select{
+    appearance: none;
+}
+select {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../assets/img/arrow-down-line.png');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 8px);
+    background-position-y: center;
+    background-size: 8px;
+}
+
+
+/* Định dạng chung cho thẻ input */
+.t-input{
+    border: none;
+    outline: none;
+}
+
+.t-input:focus, select:focus{
+    border: 1px solid #636dde;
+}
+
+/* Định dạng chung cho thẻ button */
+.t-btn{
+    border: none;
+    outline: none;
+    white-space: nowrap;
+    background-color: #fff;
+    /* font-family: sans-serif !important; */
+}
+.t-btn:hover{
+    cursor: pointer;
+}
+    /* định dạng 1 class khi bị disable */
+    .t-btn-disable{
+        /* pointer-events: none; */
+        cursor: no-drop !important;
+        opacity: 0.5;
+    }
+    .t-btn-disable:hover{
+        pointer-events: visible;
+    }
+
+/* Định dạng chung cho icon */
+.t-icon, .t-icon-1{
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    margin-right: 4px;
+}
+.t-icon{
+    background-image: url('../assets/img/common-icon.png');
+}
+.t-icon-1{
+    background-image: url('../assets/img/slibarmenu.png');
+
+}
+
+/* Định dạng cho table */
+table{
+    width: 100%;
+    /* overflow: auto; */
+}
+    /* Định nghĩa độ rộng cho 1 cột của table */
+    .col-15{
+        width: 15%;
+        min-width: 170px;
+    }
+    .col-21{
+        width: 21%;
+        min-width: 240px;
+    }
+    .col-42{
+        width: 42%;
+        min-width: 300px;
+    }
+    .col-12{
+        width: 12%;
+        min-width: 150px;
+    }
+    .col-10{
+        width: 10%;
+        min-width: 125px;
+    }
+
+    table thead{
+        text-align: center;
+        color: #212121;
+    }
+
+    table thead th{
+        border-right: 1px solid #d0d0d0 !important;
+        white-space: nowrap;
+        position: sticky;
+        top: 0;
+        background-color: #f4f4f4;
+        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+    }
+    
+    table thead th:last-child{
+        border-right-width: 0  !important;
+    }
+
+    table tbody td{
+        height: 32px;
+        white-space: nowrap;
+        padding: 0px 10px;
+        border: 1px solid #d0d0d0;
+        border-collapse: collapse;
+    }
+    table tbody td {
+        border-left-width: 0;
+        border-bottom-width: 0;
+    }
+    table tbody td:last-child {
+        border-right-width: 0;
+    }
+
+    table tbody tr:last-child td {
+        border-bottom-width: 1px;
+    }
+
+    table tr:nth-child(2n+1){
+        background-color: #f0f0fa;
+    }
+
+    table tbody tr:hover{
+        background-color: #d4d7e7;
+        cursor: pointer;
+    }
+
+/* Định dạng cho text */
+.text-color-red{
+    color: #cf4c35;
+    margin-left: 2px;
+}
